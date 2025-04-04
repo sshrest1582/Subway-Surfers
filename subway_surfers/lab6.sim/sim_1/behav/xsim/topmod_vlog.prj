@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab6.srcs/sources_1/new/Edge.v" \
+"../../../../lab6.srcs/sources_1/new/GameMachine.v" \
+"../../../../lab6.srcs/sources_1/new/LFSR.v" \
+"../../../../lab6.srcs/sources_1/new/NRG.v" \
+"../../../../lab6.srcs/sources_1/new/Pixel_address.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/lab5ok.xpr/lab5/lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/lab5ok.xpr/lab5/lab5.srcs/sources_1/imports/sources_1/new/Selector.v" \
+"../../../../lab6.srcs/sources_1/new/Slug.v" \
+"../../../../lab6.srcs/sources_1/new/SlugSM.v" \
+"../../../../lab6.srcs/sources_1/new/Syncs.v" \
+"../../../../lab6.srcs/sources_1/new/VGA.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/lab5ok.xpr/lab5/lab5.srcs/sources_1/imports/sources_1/new/count5.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/lab3day100.xpr/lab3/lab3.srcs/sources_1/new/countUD15L.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/lab5ok.xpr/lab5/lab5.srcs/sources_1/imports/sources_1/new/hexseg.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v" \
+"../../../../lab6.srcs/sources_1/imports/Downloads/lab5ok.xpr/lab5/lab5.srcs/sources_1/imports/sources_1/new/mux.v" \
+"../../../../lab6.srcs/sources_1/new/realsm.v" \
+"../../../../lab6.srcs/sources_1/new/trainsm.v" \
+"../../../../lab6.srcs/sources_1/new/topmod.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

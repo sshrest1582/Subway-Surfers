@@ -1,0 +1,145 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Mar 15 21:06:47 2024
+| Host         : BELSPC0002 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file topmod_control_sets_placed.rpt
+| Design       : topmod
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    67 |
+|    Minimum number of control sets                        |    67 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   252 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    67 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |    50 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     7 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           20 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             370 |          148 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               6 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+--------------------------------------+------------------------+------------------+----------------+
+|        Clock Signal       |             Enable Signal            |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------------+--------------------------------------+------------------------+------------------+----------------+
+|  vgacalls/slowclk/clk_out | gamer/trid2[2]_0[0]                  | Ltrdain2/top/c2/FF1_3  |                1 |              1 |
+|  vgacalls/slowclk/clk_out | MIDSF/CE0                            | M2train2/top/c2/FF1_3  |                1 |              1 |
+|  vgacalls/slowclk/clk_out | timetrack/c1/CE0_1                   | MIDSFS/top/c2/FF1_3    |                1 |              1 |
+|  vgacalls/slowclk/clk_out | right/CE0                            | R2train2/top/c2/FF1_2  |                1 |              1 |
+|  vgacalls/slowclk/clk_out | timetrack/c1/CE0                     | Rtrain/top/c2/FF1_2    |                1 |              1 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/bottomtrainL/c1/CE0         | Ltrsdain1/top/c2/FF2_1 |                1 |              1 |
+|  vgacalls/slowclk/clk_out | gamer/CE0                            |                        |                1 |              3 |
+|  vgacalls/slowclk/clk_out | countsdsd/c1/CE0                     |                        |                1 |              3 |
+|  vgacalls/slowclk/clk_out | vgacalls/slowclk/XLXI_38/I_36_31_n_0 |                        |                2 |              4 |
+|  vgacalls/slowclk/clk_out | vgacalls/slowclk/XLXI_40/CEO         |                        |                2 |              4 |
+|  vgacalls/slowclk/clk_out | vgacalls/slowclk/XLXI_45/CEO         |                        |                1 |              4 |
+|  vgacalls/slowclk/clk_out | vgacalls/slowclk/XLXI_39/CEO         |                        |                3 |              4 |
+|  vgacalls/slowclk/clk_out | Slugger/edgry/c2/MPS                 |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | cloud9/call/c2/ff1                   |                        |                4 |              5 |
+|  vgacalls/slowclk/clk_out | Slugger/edgecounter/c1/MPS           |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Slugger/edgecounter/c2/MPS           |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Slugger/edgry/c1/MPS                 |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | pixies/rows/c1/CE0                   |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | pixies/rows/c2/CE0_0                 |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | pixies/rows/c2/CE0                   |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | timetrack/c1/CE0                     |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/bottomtrainL/c1/CE0         |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | timetrack/c1/CE0_0                   |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | timetrack/c1/CE0_1                   |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | timetrack/c1/CE0_2                   |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | cloud9/call/c2/ff1_0                 |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | MIDSF/CE0                            |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | right/CE0                            |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/top/c1/FF2_2                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/top/c2/CE0                  |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/top/c2/CE0_0                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/top/c2/CE0_1                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrsdain1/bottomtrainL/c2/CE0        |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Rtrain/top/c2/CE0_1                  |                        |                1 |              5 |
+|  vgacalls/slowclk/clk_out | Rtrain/top/c2/CE0                    |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Rtrain/top/c2/CE0_0                  |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | MIDSFS/top/c1/FF2_2                  |                        |                1 |              5 |
+|  vgacalls/slowclk/clk_out | MIDSFS/top/c2/CE0_0                  |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | MIDSFS/top/c2/CE0                    |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | R2train2/bottomtrainL/c1/CE0_1       |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | R2train2/top/c2/CE0_0                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | R2train2/top/c2/CE0_1                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | R2train2/top/c2/CE0                  |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Rtrain/bottomtrainL/c1/CE0_1         |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | MIDSFS/bottomtrainL/c1/CE0_0         |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrsdain1/top/c2/CE0_0               |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrsdain1/top/c2/CE0                 |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | M2train2/bottomtrainL/c1/CE0_0       |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | M2train2/top/c1/FF2_2                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | M2train2/top/c2/CE0_0                |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | M2train2/top/c2/CE0                  |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | pixies/cols/c1/CE0_0                 |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | pixies/cols/c2/CE0                   |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | Ltrsdain1/bottomtrainL/c1/CE0        |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | CALLS/score1                         |                        |                1 |              5 |
+|  vgacalls/slowclk/clk_out | gamer/CE05_out                       |                        |                1 |              5 |
+|  vgacalls/slowclk/clk_out | gamer/trid2[2]_0[0]                  |                        |                2 |              5 |
+|  vgacalls/slowclk/clk_out | cloud9/call/c1/ff1                   |                        |                3 |              5 |
+|  vgacalls/slowclk/clk_out | Slugger/nolabel_line44/MPS           |                        |                4 |             10 |
+|  vgacalls/slowclk/clk_out | MIDSFS/top/c2/FF1_3                  |                        |                4 |             10 |
+|  vgacalls/slowclk/clk_out | Rtrain/top/c2/FF1_2                  |                        |                4 |             10 |
+|  vgacalls/slowclk/clk_out | Ltrsdain1/top/c2/FF2_1               |                        |                4 |             10 |
+|  vgacalls/slowclk/clk_out | Ltrdain2/top/c2/FF1_3                |                        |                3 |             10 |
+|  vgacalls/slowclk/clk_out | M2train2/top/c2/FF1_3                |                        |                4 |             10 |
+|  vgacalls/slowclk/clk_out | R2train2/top/c2/FF1_2                |                        |                3 |             10 |
+|  vgacalls/slowclk/clk_out |                                      |                        |               20 |             44 |
+|  vgacalls/slowclk/clk_out | gamer/run                            |                        |               15 |             48 |
++---------------------------+--------------------------------------+------------------------+------------------+----------------+
+
+
